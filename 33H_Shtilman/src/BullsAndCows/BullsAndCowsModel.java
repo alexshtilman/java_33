@@ -13,7 +13,6 @@ public class BullsAndCowsModel {
 		for (int c = 0; c < secret.length(); c++) {
 			helper[Integer.parseInt("" + charSecret[c])] = c;
 		}
-		System.out.println();
 		for (int i = 0; i < gues.length(); i++) {
 			try {
 				int index = helper[gues.charAt(i) - '0'];
