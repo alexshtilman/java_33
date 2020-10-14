@@ -31,7 +31,7 @@ public class BullsAndCowsModel {
 	}
 
 	public static String genUniqueRandomNumber() {
-		return Stream.generate(() -> (int) (new Random().nextInt(8) + 1)).distinct().limit(MAX_DIGITS)
+		return Stream.generate(() -> (int) (new Random().nextInt(9) + 1)).distinct().limit(MAX_DIGITS)
 				.collect(StringBuilder::new, (builder, cur) -> builder.append(Integer.toString(cur)),
 						StringBuilder::append)
 				.toString();
