@@ -13,7 +13,7 @@ public static void sendToFile(ArrayList<String> buffer) {
 	String fileName = formattedDate + "_" + buffer.size()/2;
 	try (PrintStream ps = new PrintStream(fileName);) {
 		for (String i : buffer) {
-			ps.print(i);
+			ps.println(i);	
 		}
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
